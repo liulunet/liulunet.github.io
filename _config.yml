@@ -12,6 +12,6 @@ weibo_username: liulunet
 
 # Build settings
 timezone: Asia/Shanghai
-markdown: kramdown
+markdown: redcarpet
 highlighter: pygments
 safe: true
