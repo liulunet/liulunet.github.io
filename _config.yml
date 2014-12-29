@@ -6,9 +6,9 @@ description: > # this means to ignore newlines until "baseurl:"
   A Jekyll blog on Github Pages by liulu.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://liulunet.github.io" # the base hostname & protocol for your site
-twitter_username: liulunet
+twitter_username:
 github_username:  liulunet
-weibo_username: liulunet
+weibo_username:
 
 # Build settings
 timezone: Asia/Shanghai
