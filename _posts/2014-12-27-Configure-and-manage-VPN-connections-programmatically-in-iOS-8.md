@@ -2,7 +2,6 @@
 layout: post
 title: "[翻译]在iOS8下通过编码设置和管理VPN连接"
 categories: iOS 翻译
-permalink: /blog/:year/:month/:day/:title
 ---
 我把示例写到了[iOS的通知中心扩展里](https://github.com/liulunet/TodayVPN)，能够很方便的全局控制VPN开关。但是没弄明白localIdentifier和remoteIdentifier到底是什么，翻墙用的VPN账号没有这个信息，用Mac Server和群晖的VPN Server搭建自己的VPN也没找到服务端的设置，问一个CCNP的朋友说就是一个标识，不设置也可以连接。但我总觉得那个水货欺骗了我，应该没那么简单…
 

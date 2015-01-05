@@ -4,6 +4,7 @@ name: liulu
 email: liulunet#live.com
 description: > # this means to ignore newlines until "baseurl:"
   A Jekyll blog on Github Pages by liulu.
+permalink: /blog/:year/:month/:day/:title
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://liulunet.github.io" # the base hostname & protocol for your site
 twitter_username:
