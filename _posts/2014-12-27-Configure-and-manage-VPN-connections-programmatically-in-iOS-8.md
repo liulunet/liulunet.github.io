@@ -19,7 +19,7 @@ categories: iOS 翻译
 
 官方目前尚未发布任何相关文档，本文可作为在iOS8和OS X(10.10)Yosemite下管理VPN配置的指南。感谢[quellish](http://pimpmyradar.com/)在这方面给我的很多帮助。
 
-##要求
+## 要求
 
 1. 最基本的一点，你得有一台运行iOS8 Beta1以上版本的设备来调试app！这个实验无法在模拟器上运行。如果你要开发的是Mac程序，电脑必须有OS X Yosemite Preview3以上版本的系统。
 
@@ -29,7 +29,7 @@ categories: iOS 翻译
 
 4. 最后，你还需要一台Mac。Xcode不能在Windows和Linux设备上运行。
 
-##开始
+## 开始
 
 在着手编码之前，你需要先更新你的项目配置文件。如果你之前没有创建过配置文件，那现在就要新建一个！登陆你的[开发账号](http://developer.apple.com/)，然后点击“Certificate, Identifiers & Profiles”：
 
@@ -53,7 +53,7 @@ iOS8发布以后，这里新增了**“VPN Configuration & Control”**项目。
 
 在开始之前，你得先了解这一切是如何实现的！如果你了解了Network Extension framework的原理，基于它的开发工作将会变得更容易。
 
-##NetworkExtension.framework
+## NetworkExtension.framework
 
 苹果在开发这个库时已经有了一个精妙的设计。所有的app都可以在自己的沙盒之内访问系统设置，这意味着你无法访问其他app的沙盒。
 
@@ -75,7 +75,7 @@ Network extension包含了三个主要的类：
 
 `NEVPNManager`是最重要的一个类。它负责载入，保存和删除配置信息。实际上，所有对VPN的行为都需要通过这个类来完成。
 
-##创建一个新的VPN连接
+## 创建一个新的VPN连接
 
 首先得创建一个该类的实例对象：
 
@@ -179,7 +179,7 @@ IPSec和IKEv2协议有一个非常酷的特性叫做按需连接。可以在用�
 
 该方法只会把你已设定的配置项保存到系统中。
 
-##连接刚才创建的VPN连接
+## 连接刚才创建的VPN连接
 
 配置信息已经保存到系统中，现在可以连接它了。NEVPNManager有一个属性叫`connection`。这个属性是一个`NEVPNConnection`类型的对象。它持有连接VPN所必须的信息。要将刚才创建的VPN连接连接到服务器，直接像下面的代码那样调用`NEVPNConnection`类中的`startVPNTunnelAndReturnError:`方法就可以了：
 
