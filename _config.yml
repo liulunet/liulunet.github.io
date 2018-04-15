@@ -14,5 +14,5 @@ weibo_username:
 # Build settings
 timezone: Asia/Shanghai
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 safe: true
